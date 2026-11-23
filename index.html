@@ -4,518 +4,567 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dakota Taylor | Business Operations Leader &amp; Systems Engineer</title>
-  <meta name="description" content="Online resume and executive portfolio of Dakota Taylor, Business Operations Leader and Systems Engineer based in Phoenix, Arizona." />
-
-  <!-- Google Fonts: Newsreader & Plus Jakarta Sans -->
+  <meta name="description" content="Dakota Taylor — Business Operations Leader and Systems Engineer. Turning complex, manual operations into repeatable systems, clear workflows, and scalable internal tools." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Tailwind CSS CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind Configuration: High-Contrast Warm Coconut Palette -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            coconutCream: '#FAF6F0',
-            toastedOat: '#EFE4D5',
-            coconutIvory: '#FFFDF9',
-            sandBorder: '#D8C6B0',
-            roastedCocoa: '#261B15',
-            espresso: '#241913',
-            roastBrown: '#524136',
-            driftwood: '#7E6856',
-            cognac: '#8A5836',
-            terracotta: '#A87654',
-            oliveSage: '#596147',
-          },
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-            serif: ['"Newsreader"', 'Georgia', 'serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            coconut: {
+              cream: '#FAF6F0',
+              oat: '#EFE4D5',
+              ivory: '#FFFDF9',
+              sand: '#D8C6B0',
+              cocoa: '#261B15',
+              espresso: '#241913',
+              bark: '#5E4B3E',
+              cognac: '#8A5836',
+              cognacHover: '#704427',
+              sage: '#596147',
+            }
           }
         }
       }
     };
   </script>
-
   <style>
-    /* Sticky header scroll offset */
-    section[id] {
-      scroll-margin-top: 84px;
+    body {
+      background-color: #FAF6F0;
+      color: #241913;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     }
-
-    /* Warm custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
+    .font-display {
+      font-family: 'Fraunces', Georgia, serif;
     }
-    ::-webkit-scrollbar-track {
-      background: #EFE4D5;
+    .nav-link.active {
+      color: #8A5836;
+      font-weight: 600;
     }
-    ::-webkit-scrollbar-thumb {
-      background: #C4B098;
-      border-radius: 4px;
+    .nav-link.active::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #8A5836;
+      margin-top: 2px;
+      border-radius: 9999px;
     }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #8A5836;
-    }
-
-    /* Editorial arch frame */
     .arch-frame {
-      border-radius: 9999px 9999px 14px 14px;
+      border-radius: 9999px 9999px 24px 24px;
     }
   </style>
 </head>
-<body class="bg-coconutCream text-espresso font-sans antialiased selection:bg-cognac/20 selection:text-espresso overflow-x-hidden">
+<body class="bg-coconut-cream text-coconut-espresso antialiased selection:bg-coconut-cognac selection:text-coconut-ivory">
 
-  <!-- =====================================================================
-       1. STICKY THREE-ZONE EXECUTIVE HEADER
-       ===================================================================== -->
-  <header id="site-header" class="sticky top-0 inset-x-0 z-[1000] bg-coconutCream/95 backdrop-blur-md border-b border-sandBorder transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-3 sm:gap-6">
-      
-      <!-- Left Zone: DT Monogram Box + Name & Tracked Subtitle -->
-      <a href="#top" class="flex items-center gap-3 sm:gap-3.5 group focus:outline-none min-w-0" aria-label="Dakota Taylor Home">
-        <div class="w-10 h-10 border border-cognac bg-coconutIvory group-hover:bg-cognac transition-colors flex items-center justify-center rounded-sm shrink-0">
-          <span class="text-sm font-medium tracking-widest text-espresso group-hover:text-coconutIvory transition-colors">DT</span>
+  <!-- Sticky Three-Zone Header -->
+  <header class="sticky top-0 z-50 bg-coconut-ivory/95 backdrop-blur-md border-b border-coconut-sand/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Left Zone: Monogram + Name + Subtitle -->
+        <a href="#top" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-lg border border-coconut-cognac/70 bg-coconut-cream flex items-center justify-center font-display text-base font-semibold tracking-wider text-coconut-espresso group-hover:bg-coconut-cognac group-hover:text-coconut-ivory transition-colors">
+            DT
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm sm:text-base font-bold tracking-[0.14em] uppercase text-coconut-espresso">
+              Dakota Taylor
+            </div>
+            <div class="text-[10px] sm:text-[11px] font-medium tracking-[0.16em] uppercase text-coconut-bark mt-0.5">
+              Operations Leader &amp; Systems Engineer
+            </div>
+          </div>
+        </a>
+
+        <!-- Center Zone: Anchor Navigation (Desktop) -->
+        <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-8 text-xs font-medium tracking-[0.14em] uppercase text-coconut-bark">
+          <a href="#impact" class="nav-link hover:text-coconut-espresso transition-colors py-1">Impact</a>
+          <a href="#experience" class="nav-link hover:text-coconut-espresso transition-colors py-1">Experience</a>
+          <a href="#strengths" class="nav-link hover:text-coconut-espresso transition-colors py-1">Strengths</a>
+          <a href="#retreats" class="nav-link hover:text-coconut-espresso transition-colors py-1">Network</a>
+          <a href="#about" class="nav-link hover:text-coconut-espresso transition-colors py-1">About</a>
+        </nav>
+
+        <!-- Right Zone: Connect CTA + Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#connect" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-coconut-cognac text-coconut-ivory text-xs font-semibold tracking-[0.12em] uppercase hover:bg-coconut-cognacHover transition-colors shadow-sm">
+            Let's Connect <span aria-hidden="true">↗</span>
+          </a>
+          <button id="mobile-menu-btn" type="button" aria-label="Toggle Menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center p-2.5 rounded-lg border border-coconut-sand text-coconut-espresso hover:bg-coconut-oat transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
         </div>
-        <div class="flex flex-col min-w-0">
-          <span class="text-base sm:text-lg font-medium tracking-tight text-espresso leading-tight truncate">
-            Dakota Taylor
-          </span>
-          <span class="text-[8.5px] sm:text-[10px] font-semibold tracking-[0.18em] sm:tracking-[0.2em] uppercase text-driftwood mt-0.5 leading-tight truncate">
-            Operations Leader &amp; Systems Engineer
-          </span>
-        </div>
-      </a>
-
-      <!-- Center Zone (Desktop): Single-Word Anchor Links -->
-      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-7 lg:gap-10">
-        <a href="#impact" data-nav-link="impact" class="nav-link text-xs font-medium tracking-wider text-roastBrown hover:text-espresso transition-colors py-1 border-b-2 border-transparent">
-          Impact
-        </a>
-        <a href="#experience" data-nav-link="experience" class="nav-link text-xs font-medium tracking-wider text-roastBrown hover:text-espresso transition-colors py-1 border-b-2 border-transparent">
-          Experience
-        </a>
-        <a href="#strengths" data-nav-link="strengths" class="nav-link text-xs font-medium tracking-wider text-roastBrown hover:text-espresso transition-colors py-1 border-b-2 border-transparent">
-          Strengths
-        </a>
-        <a href="#retreats" data-nav-link="retreats" class="nav-link text-xs font-medium tracking-wider text-roastBrown hover:text-espresso transition-colors py-1 border-b-2 border-transparent">
-          Retreats
-        </a>
-        <a href="#about" data-nav-link="about" class="nav-link text-xs font-medium tracking-wider text-roastBrown hover:text-espresso transition-colors py-1 border-b-2 border-transparent">
-          About
-        </a>
-      </nav>
-
-      <!-- Right Zone: CONNECT Link + Mobile Menu Toggle -->
-      <div class="flex items-center gap-2.5 sm:gap-4 shrink-0">
-        <a href="#connect" class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold tracking-[0.18em] sm:tracking-[0.2em] uppercase text-espresso hover:text-cognac transition-colors py-2 px-1">
-          <span>Connect</span>
-          <span aria-hidden="true" class="text-cognac text-xs leading-none">&#8599;</span>
-        </a>
-
-        <!-- Mobile Hamburger Button -->
-        <button
-          id="mobile-menu-btn"
-          type="button"
-          class="md:hidden inline-flex items-center justify-center p-2.5 rounded border border-sandBorder bg-coconutIvory text-espresso hover:border-cognac transition-colors"
-          aria-controls="mobile-menu-drawer"
-          aria-expanded="false"
-          aria-label="Toggle navigation menu"
-        >
-          <svg id="icon-menu-open" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-          <svg id="icon-menu-close" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
       </div>
     </div>
 
-    <!-- Mobile Collapsible Navigation Drawer -->
-    <div id="mobile-menu-drawer" class="hidden md:hidden bg-coconutIvory border-t border-sandBorder px-4 pt-2.5 pb-4 shadow-lg">
-      <nav aria-label="Mobile Navigation" class="flex flex-col space-y-1">
-        <a href="#impact" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Impact
-        </a>
-        <a href="#experience" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Experience
-        </a>
-        <a href="#strengths" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Strengths
-        </a>
-        <a href="#retreats" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Retreats
-        </a>
-        <a href="#about" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          About
-        </a>
-      </nav>
+    <!-- Collapsible Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-coconut-sand bg-coconut-ivory px-6 py-4 space-y-3">
+      <a href="#impact" class="mobile-nav-link block py-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-coconut-bark hover:text-coconut-cognac">Impact</a>
+      <a href="#experience" class="mobile-nav-link block py-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-coconut-bark hover:text-coconut-cognac">Experience</a>
+      <a href="#strengths" class="mobile-nav-link block py-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-coconut-bark hover:text-coconut-cognac">Strengths</a>
+      <a href="#retreats" class="mobile-nav-link block py-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-coconut-bark hover:text-coconut-cognac">Network</a>
+      <a href="#about" class="mobile-nav-link block py-1.5 text-xs font-semibold tracking-[0.14em] uppercase text-coconut-bark hover:text-coconut-cognac">About</a>
     </div>
   </header>
 
-  <!-- =====================================================================
-       MAIN CONTENT
-       ===================================================================== -->
+  <!-- Hero Section -->
   <main id="top">
+    <section class="bg-coconut-cream border-b border-coconut-sand/70 py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+          <!-- Left Column: Intro & Primary Actions -->
+          <div class="lg:col-span-7 space-y-7">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-coconut-oat border border-coconut-sand text-[11px] font-semibold tracking-[0.16em] uppercase text-coconut-sage">
+              <span class="w-2 h-2 rounded-full bg-coconut-sage"></span>
+              Business Operations &amp; Internal Systems
+            </div>
 
-    <!-- ===================================================================
-         8. BEYOND WORK (#about) (Toasted Oat #EFE4D5)
-         =================================================================== -->
-    <section id="about" class="py-20 sm:py-28 border-b border-sandBorder bg-toastedOat">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="space-y-4">
+              <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-coconut-espresso leading-[1.1]">
+                Dakota Taylor
+              </h1>
+              <p class="font-display text-xl sm:text-2xl text-coconut-cognac font-medium">
+                Business Operations Leader and Systems Engineer
+              </p>
+            </div>
 
-        <!-- Full-Width Beyond Work Card -->
-        <div class="w-full bg-coconutIvory border border-sandBorder rounded-xl p-7 sm:p-10 lg:p-12 shadow-sm space-y-6">
-          <div class="space-y-4">
-            <p class="text-[11px] font-semibold tracking-[0.22em] uppercase text-oliveSage">
-              About Me
+            <p class="text-base sm:text-lg text-coconut-bark leading-relaxed max-w-2xl">
+              I turn complex, manual operations into repeatable systems and clear workflows by pairing 5+ years of operational leadership with custom tool building.
             </p>
-            <h2 class="font-serif text-2xl sm:text-3xl font-normal tracking-tight text-espresso">
-              Beyond Work
-            </h2>
-            <p class="text-sm sm:text-base font-normal text-roastBrown leading-relaxed">
-              Outside of work, I recharge through travel, working out, and reading. One of my favorite memories is finishing the Phoenix Half Marathon in December 2025 with my dad and crossing the finish line together, and I keep that routine going with weekly hot yoga and Pilates. I love exploring new places, having visited 15 countries so far, including studying abroad in London.
-            </p>
-            <p class="text-sm sm:text-base font-normal text-roastBrown leading-relaxed">
-              I also enjoy reading across both fiction and nonfiction. <em class="text-espresso font-medium">Ender's Game</em> by Orson Scott Card is always at the top of my list of sci-fi favorites, and <em class="text-espresso font-medium">How to Win Friends and Influence People</em> by Dale Carnegie is an all-time favorite personal development book.
-            </p>
+
+            <!-- Hero Action Buttons (Reference Style for Bottom Section) -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="https://drive.google.com/file/d/1Ap3C1BQy4VFw3UfOMoY-HRS7ODxRWlvX/view" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-coconut-espresso text-coconut-ivory text-sm font-semibold tracking-wide hover:bg-coconut-cognac transition-colors shadow-sm">
+                Download Resume <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.linkedin.com/in/dakota-taylor-203424227/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-coconut-ivory text-coconut-espresso border border-coconut-sand text-sm font-semibold tracking-wide hover:border-coconut-cognac hover:text-coconut-cognac transition-colors">
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <!-- Quick Proof Strip -->
+            <div class="grid grid-cols-3 gap-4 pt-6 border-t border-coconut-sand/80 max-w-xl">
+              <div>
+                <div class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso">$7,200/yr</div>
+                <div class="text-xs text-coconut-bark mt-1">SaaS spend replaced</div>
+              </div>
+              <div>
+                <div class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso">15 hrs/wk</div>
+                <div class="text-xs text-coconut-bark mt-1">Manual work automated</div>
+              </div>
+              <div>
+                <div class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso">2d to 1hr</div>
+                <div class="text-xs text-coconut-bark mt-1">Onboarding setup time</div>
+              </div>
+            </div>
           </div>
 
-          <!-- Highlights Strip -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-5 border-t border-sandBorder">
-            <div>
-              <span class="block font-serif text-lg sm:text-xl font-normal text-espresso">13.1 Miles</span>
-              <span class="text-[11px] font-medium text-driftwood">Phoenix Half Marathon</span>
-            </div>
-            <div>
-              <span class="block font-serif text-lg sm:text-xl font-normal text-espresso">15 Countries</span>
-              <span class="text-[11px] font-medium text-driftwood">International Travel</span>
-            </div>
-            <div>
-              <span class="block font-serif text-lg sm:text-xl font-normal text-espresso">London</span>
-              <span class="text-[11px] font-medium text-driftwood">Study Abroad Alumna</span>
+          <!-- Right Column: Arched Portrait Frame -->
+          <div class="lg:col-span-5 flex flex-col items-center">
+            <div class="w-full max-w-sm bg-coconut-ivory p-3.5 border border-coconut-sand shadow-md arch-frame">
+              <div class="relative overflow-hidden bg-coconut-oat aspect-[3/4] arch-frame">
+                <img
+                  id="headshot-img"
+                  src="https://drive.google.com/thumbnail?id=12ALwGbuGWS6QZ1JkczF89RSoYyhAR5FO&sz=w1000"
+                  data-fallback-1="https://lh3.googleusercontent.com/d/12ALwGbuGWS6QZ1JkczF89RSoYyhAR5FO=w1000"
+                  data-fallback-2="SHEF5052.jpg"
+                  alt="Portrait of Dakota Taylor"
+                  class="w-full h-full object-cover object-top"
+                  onerror="handleImageFallback(this)"
+                />
+                <div id="headshot-placeholder" class="hidden w-full h-full flex flex-col items-center justify-center text-center p-6 bg-coconut-oat text-coconut-bark">
+                  <div class="w-16 h-16 rounded-full border border-coconut-cognac flex items-center justify-center font-display text-xl font-semibold text-coconut-espresso mb-3">
+                    DT
+                  </div>
+                  <p class="font-display text-lg font-semibold text-coconut-espresso">Dakota Taylor</p>
+                  <p class="text-xs text-coconut-bark mt-1">Operations Leader &amp; Systems Engineer</p>
+                </div>
+              </div>
+              <div class="pt-3.5 pb-1 px-3 flex items-center justify-between text-xs text-coconut-bark">
+                <span class="font-semibold tracking-wider uppercase text-coconut-espresso">Phoenix, Arizona</span>
+                <a href="https://drive.google.com/file/d/12ALwGbuGWS6QZ1JkczF89RSoYyhAR5FO/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-coconut-cognac hover:underline font-medium">
+                  Full photo ↗
+                </a>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- ===================================================================
-         9. LET'S CONNECT (#connect) (Coconut Cream #FAF6F0)
-         =================================================================== -->
-    <section id="connect" class="py-20 sm:py-24 bg-coconutCream">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8">
-
-        <div class="mb-12">
-          <p class="text-[11px] font-semibold tracking-[0.22em] uppercase text-cognac mb-3">
-            Direct Contact
+    <!-- Impact & Builds Section (Richer Toasted Oat Surface) -->
+    <section id="impact" class="bg-coconut-oat border-b border-coconut-sand py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-bold tracking-[0.18em] uppercase text-coconut-cognac mb-2">
+            Selected Outcomes
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-coconut-espresso">
+            Impact &amp; Builds
+          </h2>
+          <p class="text-base text-coconut-bark mt-3 leading-relaxed">
+            Measurable operational improvements built by replacing disconnected spreadsheets with purpose-built internal tools, clear standards, and automated workflows.
           </p>
-          <h2 class="font-serif text-3xl sm:text-4xl font-normal tracking-tight text-espresso">
-            Let's Connect
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Card 1 -->
+          <article class="bg-coconut-ivory rounded-2xl p-7 sm:p-8 border border-coconut-sand shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full bg-coconut-oat text-coconut-sage text-xs font-semibold tracking-wider uppercase mb-4">
+                Cost &amp; Tool Consolidation
+              </div>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso mb-3">
+                $7,200/yr in SaaS Eliminated
+              </h3>
+              <p class="text-coconut-bark leading-relaxed">
+                Built a custom internal CRM and transaction hub to replace roughly 15 fragmented spreadsheets, centralizing pipeline tracking and cutting $7,200/yr in recurring software spend.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="bg-coconut-ivory rounded-2xl p-7 sm:p-8 border border-coconut-sand shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full bg-coconut-oat text-coconut-sage text-xs font-semibold tracking-wider uppercase mb-4">
+                Workflow Automation
+              </div>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso mb-3">
+                Automated 15 hrs/wk of Manual Tasks
+              </h3>
+              <p class="text-coconut-bark leading-relaxed mb-4">
+                Designed AI-assisted automations and standardized workflows that remove recurring manual bottlenecks across reporting, content, and leadership updates:
+              </p>
+              <ul class="space-y-1.5 text-sm text-coconut-espresso font-medium">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-coconut-cognac"></span>Weekly Real Estate Listing Report</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-coconut-cognac"></span>Weekly Blog Research and Posting</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-coconut-cognac"></span>Google Review Responder</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-coconut-cognac"></span>Daily CEO Text Message Recap</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="bg-coconut-ivory rounded-2xl p-7 sm:p-8 border border-coconut-sand shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full bg-coconut-oat text-coconut-sage text-xs font-semibold tracking-wider uppercase mb-4">
+                Multi-Site Scale
+              </div>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso mb-3">
+                2 days → 1 hr Onboarding Setup
+              </h3>
+              <p class="text-coconut-bark leading-relaxed">
+                Overhauled setup workflows and compliance checklists across 10 offices, scaling onboarding for roughly 600 agents per year while cutting individual setup time from 2 full days to 1 hour.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="bg-coconut-ivory rounded-2xl p-7 sm:p-8 border border-coconut-sand shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="inline-block px-3 py-1 rounded-full bg-coconut-oat text-coconut-sage text-xs font-semibold tracking-wider uppercase mb-4">
+                Partner Revenue
+              </div>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-coconut-espresso mb-3">
+                $7,500+ in Annual Sponsorships
+              </h3>
+              <p class="text-coconut-bark leading-relaxed">
+                Structured and managed affiliate sponsorship programs generating $7,500+ in annualized value across 10 offices while strengthening vendor alignment.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operating Principle Anchor Band (Deep Roasted Cocoa Contrast) -->
+    <section class="bg-coconut-cocoa text-coconut-ivory py-20 sm:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+        <div class="text-xs font-bold tracking-[0.2em] uppercase text-coconut-sand">
+          Operating Principle
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-coconut-ivory">
+          Systems Built for Clarity. Engineered to Scale.
+        </h2>
+        <p class="text-base sm:text-lg text-coconut-oat/90 max-w-3xl mx-auto leading-relaxed">
+          Fast-growing teams rarely stall from a lack of skill or effort. They stall when processes live in people's heads and become disconnected systems. I diagnose operational friction, build practical systems and automations, and align stakeholders so teams can move faster with fewer errors.
+        </p>
+        <div class="pt-4">
+          <div class="inline-block px-6 py-4 rounded-2xl border border-coconut-sand/30 bg-white/5 text-sm sm:text-base font-medium tracking-wide text-coconut-cream">
+            Identify the real bottleneck. Document the standard. Automate the repetition. Build the systems that scale with the team.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Credentials Section (Coconut Cream Surface) -->
+    <section id="experience" class="bg-coconut-cream border-b border-coconut-sand py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-bold tracking-[0.18em] uppercase text-coconut-cognac mb-2">
+            Track Record
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-coconut-espresso">
+            Experience &amp; Credentials
           </h2>
         </div>
 
-        <!-- Contact Cards + Top-Matched Resume & LinkedIn Buttons -->
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-stretch">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+          <!-- Left 7 Columns: Work Experience -->
+          <div class="lg:col-span-7 space-y-6">
+            <h3 class="text-xs font-bold tracking-[0.16em] uppercase text-coconut-bark pb-2 border-b border-coconut-sand">
+              Leadership Experience
+            </h3>
 
-          <!-- Phone Card -->
-          <div class="md:col-span-4 bg-coconutIvory border border-sandBorder hover:border-cognac rounded-xl p-6 flex items-center justify-between gap-4 shadow-sm transition-colors">
-            <div class="min-w-0">
-              <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-driftwood mb-1.5">Phone</span>
-              <a href="tel:+17023341932" class="text-sm sm:text-base font-semibold text-espresso hover:text-cognac transition-colors">
-                (702) 334-1932
-              </a>
+            <!-- Role 1 -->
+            <div class="bg-coconut-ivory rounded-2xl p-6 sm:p-7 border border-coconut-sand shadow-sm">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                <h4 class="font-display text-xl font-bold text-coconut-espresso">Director of Operations</h4>
+                <span class="text-xs font-semibold tracking-wider uppercase text-coconut-sage bg-coconut-oat px-3 py-1 rounded-full">
+                  September 2024 – Present
+                </span>
+              </div>
+              <div class="text-sm font-semibold text-coconut-cognac mb-3">Bryant Real Estate</div>
+              <p class="text-sm sm:text-base text-coconut-bark leading-relaxed">
+                Lead end-to-end operational systems, transaction workflows, vendor and contractor coordination, and custom internal tooling to keep daily execution structured and scalable.
+              </p>
             </div>
-            <button
-              type="button"
-              data-copy-text="(702) 334-1932"
-              data-copy-label="Phone number"
-              class="copy-trigger shrink-0 inline-flex items-center gap-1.5 px-4 py-2.5 rounded-md border border-sandBorder bg-toastedOat/70 hover:bg-cognac hover:border-cognac text-espresso hover:text-coconutIvory text-[11px] font-semibold tracking-[0.14em] uppercase transition-colors focus:outline-none"
-            >
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span class="copy-btn-text">Copy</span>
-            </button>
-          </div>
 
-          <!-- Email Card -->
-          <div class="md:col-span-4 bg-coconutIvory border border-sandBorder hover:border-cognac rounded-xl p-6 flex items-center justify-between gap-4 shadow-sm transition-colors">
-            <div class="min-w-0">
-              <span class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-driftwood mb-1.5">Email</span>
-              <a href="mailto:dtaylor2you@gmail.com" class="text-sm sm:text-base font-semibold text-espresso hover:text-cognac transition-colors break-all">
-                dtaylor2you@gmail.com
-              </a>
+            <!-- Role 2 -->
+            <div class="bg-coconut-ivory rounded-2xl p-6 sm:p-7 border border-coconut-sand shadow-sm">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                <h4 class="font-display text-xl font-bold text-coconut-espresso">Agent and Partner Services Coordinator</h4>
+                <span class="text-xs font-semibold tracking-wider uppercase text-coconut-bark bg-coconut-oat px-3 py-1 rounded-full">
+                  May 2023 – May 2024
+                </span>
+              </div>
+              <div class="text-sm font-semibold text-coconut-cognac mb-3">Keller Williams Arizona Realty</div>
+              <p class="text-sm sm:text-base text-coconut-bark leading-relaxed">
+                Supported partner alignment, multi-site operational programs, and service workflows across a high-volume real estate environment.
+              </p>
             </div>
-            <button
-              type="button"
-              data-copy-text="dtaylor2you@gmail.com"
-              data-copy-label="Email address"
-              class="copy-trigger shrink-0 inline-flex items-center gap-1.5 px-4 py-2.5 rounded-md border border-sandBorder bg-toastedOat/70 hover:bg-cognac hover:border-cognac text-espresso hover:text-coconutIvory text-[11px] font-semibold tracking-[0.14em] uppercase transition-colors focus:outline-none"
-            >
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span class="copy-btn-text">Copy</span>
-            </button>
+
+            <!-- Role 3 -->
+            <div class="bg-coconut-ivory rounded-2xl p-6 sm:p-7 border border-coconut-sand shadow-sm">
+              <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+                <h4 class="font-display text-xl font-bold text-coconut-espresso">Assistant Market Center Administrator</h4>
+                <span class="text-xs font-semibold tracking-wider uppercase text-coconut-bark bg-coconut-oat px-3 py-1 rounded-full">
+                  October 2021 – May 2023
+                </span>
+              </div>
+              <div class="text-sm font-semibold text-coconut-cognac mb-3">Keller Williams Arizona Realty</div>
+              <p class="text-sm sm:text-base text-coconut-bark leading-relaxed">
+                Owned core administrative and financial operations across a 10-office footprint, building compliance, reporting, and agent support systems.
+              </p>
+            </div>
           </div>
 
-          <!-- Resume & LinkedIn Buttons Matching Hero Styling -->
-          <div class="md:col-span-4 flex flex-wrap items-center gap-4 sm:gap-6">
-            <a
-              href="https://drive.google.com/file/d/1Ap3C1BQy4VFw3UfOMoY-HRS7ODxRWlvX/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center justify-center gap-2.5 bg-cognac hover:bg-espresso text-coconutIvory font-semibold text-[11px] tracking-[0.18em] uppercase px-7 py-4 rounded-sm transition-all shadow-sm"
-            >
-              <span>Download Resume</span>
-              <span aria-hidden="true" class="text-xs">&#8599;</span>
-            </a>
+          <!-- Right 5 Columns: Education & Certifications -->
+          <div class="lg:col-span-5 space-y-8">
+            <!-- Education -->
+            <div class="space-y-4">
+              <h3 class="text-xs font-bold tracking-[0.16em] uppercase text-coconut-bark pb-2 border-b border-coconut-sand">
+                Education
+              </h3>
+              <div class="bg-coconut-ivory rounded-2xl p-6 border border-coconut-sand shadow-sm space-y-5">
+                <div>
+                  <div class="font-display text-lg font-bold text-coconut-espresso">B.S. Business Management</div>
+                  <div class="text-sm text-coconut-bark">Grand Canyon University, Honors College · 2021 – 2023</div>
+                </div>
+                <div class="pt-4 border-t border-coconut-sand/70">
+                  <div class="font-display text-lg font-bold text-coconut-espresso">Study Abroad</div>
+                  <div class="text-sm text-coconut-bark">London Metropolitan University · Summer 2022</div>
+                </div>
+                <div class="pt-4 border-t border-coconut-sand/70">
+                  <div class="font-display text-lg font-bold text-coconut-espresso">Associate of Arts</div>
+                  <div class="text-sm text-coconut-bark">College of Southern Nevada High School · 2019 – 2021</div>
+                </div>
+              </div>
+            </div>
 
-            <a
-              href="https://www.linkedin.com/in/dakota-taylor-203424227/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center justify-center gap-2 border-b-2 border-cognac hover:border-espresso text-espresso hover:text-cognac font-semibold text-[11px] tracking-[0.18em] uppercase px-2 py-3.5 transition-colors"
-            >
-              <span>LinkedIn</span>
-              <span aria-hidden="true" class="text-xs">&#8599;</span>
-            </a>
+            <!-- Certifications -->
+            <div class="space-y-4">
+              <h3 class="text-xs font-bold tracking-[0.16em] uppercase text-coconut-bark pb-2 border-b border-coconut-sand">
+                Licenses &amp; Certifications
+              </h3>
+              <div class="bg-coconut-ivory rounded-2xl p-6 border border-coconut-sand shadow-sm space-y-4">
+                <div>
+                  <div class="text-sm font-bold text-coconut-espresso">Arizona Real Estate License</div>
+                  <div class="text-xs text-coconut-bark mt-0.5">License #SA713480000</div>
+                </div>
+                <div class="pt-3 border-t border-coconut-sand/70">
+                  <div class="text-sm font-bold text-coconut-espresso">Claude Academy Certifications</div>
+                  <ul class="mt-1.5 space-y-1 text-xs text-coconut-bark">
+                    <li>• Claude 101</li>
+                    <li>• Claude Code 101</li>
+                    <li>• AI Fluency Framework &amp; Foundations</li>
+                  </ul>
+                </div>
+                <div class="pt-3 border-t border-coconut-sand/70">
+                  <div class="text-sm font-bold text-coconut-espresso">QuickBooks Online Payroll Certified</div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
 
-  </main>
-
-  <!-- =====================================================================
-       10. THREE-ZONE MINIMALIST FOOTER
-       ===================================================================== -->
-  <footer class="bg-coconutIvory border-t border-sandBorder">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-10 sm:py-12">
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
-        
-        <!-- Left Zone: Square DT Monogram + Uppercase Name & Title -->
-        <div class="flex items-center gap-4">
-          <div class="w-11 h-11 border border-cognac bg-coconutCream flex items-center justify-center rounded-sm shrink-0">
-            <span class="text-sm font-medium tracking-widest text-espresso">DT</span>
+    <!-- Core Strengths & Filterable Tech Stack Section (Toasted Oat Surface) -->
+    <section id="strengths" class="bg-coconut-oat border-b border-coconut-sand py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <!-- Core Strengths -->
+        <div>
+          <div class="max-w-3xl mb-10">
+            <div class="text-xs font-bold tracking-[0.18em] uppercase text-coconut-cognac mb-2">
+              Capabilities
+            </div>
+            <h2 class="font-display text-3xl sm:text-4xl font-semibold text-coconut-espresso">
+              Core Strengths
+            </h2>
           </div>
-          <div class="flex flex-col text-left">
-            <span class="text-base sm:text-lg font-medium tracking-[0.14em] uppercase text-espresso leading-tight">
-              Dakota Taylor
-            </span>
-            <span class="text-[9px] sm:text-[10px] font-semibold tracking-[0.2em] uppercase text-driftwood mt-1 leading-tight">
-              Operations Leader &amp; Systems Engineer
-            </span>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <div class="bg-coconut-ivory rounded-2xl p-7 border border-coconut-sand shadow-sm">
+              <div class="font-display text-sm font-bold text-coconut-cognac mb-2">01</div>
+              <h3 class="font-display text-xl font-bold text-coconut-espresso mb-3">
+                Systems &amp; Workflow Automation
+              </h3>
+              <p class="text-sm sm:text-base text-coconut-bark leading-relaxed">
+                Building custom internal tools, AI-assisted automations, data views, and clear SOPs that replace manual busywork with reliable execution.
+              </p>
+            </div>
+
+            <div class="bg-coconut-ivory rounded-2xl p-7 border border-coconut-sand shadow-sm">
+              <div class="font-display text-sm font-bold text-coconut-cognac mb-2">02</div>
+              <h3 class="font-display text-xl font-bold text-coconut-espresso mb-3">
+                Strategic &amp; Partner Execution
+              </h3>
+              <p class="text-sm sm:text-base text-coconut-bark leading-relaxed">
+                Structuring partner and sponsorship programs, aligning cross-functional stakeholders, and supporting leadership priorities from idea to rollout.
+              </p>
+            </div>
+
+            <div class="bg-coconut-ivory rounded-2xl p-7 border border-coconut-sand shadow-sm">
+              <div class="font-display text-sm font-bold text-coconut-cognac mb-2">03</div>
+              <h3 class="font-display text-xl font-bold text-coconut-espresso mb-3">
+                Operational &amp; Financial Rigor
+              </h3>
+              <p class="text-sm sm:text-base text-coconut-bark leading-relaxed">
+                Scaling multi-site processes, enforcing compliance, managing payroll and P&amp;L tracking, and keeping day-to-day operations running smoothly.
+              </p>
+            </div>
           </div>
         </div>
 
-        <!-- Center Zone: Three Pillars Separated by Middle Dots -->
-        <div class="text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase text-roastBrown leading-relaxed">
-          Scalable Systems &middot; Workflow Automation &middot; Operational Rigor
-        </div>
+        <!-- Filterable Tech Stack -->
+        <div class="bg-coconut-ivory rounded-3xl p-7 sm:p-10 border border-coconut-sand shadow-sm">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+            <div>
+              <div class="text-xs font-bold tracking-[0.18em] uppercase text-coconut-cognac mb-2">
+                Systems &amp; Platforms
+              </div>
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-coconut-espresso">
+                Tech Stack
+              </h3>
+            </div>
 
-        <!-- Right Zone: Copyright -->
-        <div class="text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase text-driftwood shrink-0">
-          &copy; 2026 Dakota Taylor
-        </div>
+            <!-- Filter Pills -->
+            <div id="stack-filters" class="flex flex-wrap gap-2">
+              <button type="button" data-filter="all" class="stack-filter-btn active px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-coconut-espresso text-coconut-ivory transition-colors">
+                All Tools
+              </button>
+              <button type="button" data-filter="ai" class="stack-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-coconut-oat text-coconut-bark hover:text-coconut-espresso transition-colors">
+                AI &amp; Code
+              </button>
+              <button type="button" data-filter="ops" class="stack-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-coconut-oat text-coconut-bark hover:text-coconut-espresso transition-colors">
+                Workspace &amp; Ops
+              </button>
+              <button type="button" data-filter="crm" class="stack-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-coconut-oat text-coconut-bark hover:text-coconut-espresso transition-colors">
+                CRM &amp; Transactions
+              </button>
+              <button type="button" data-filter="finance" class="stack-filter-btn px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-coconut-oat text-coconut-bark hover:text-coconut-espresso transition-colors">
+                Finance &amp; Growth
+              </button>
+            </div>
+          </div>
 
+          <div id="stack-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div data-category="ai" class="stack-card p-5 rounded-2xl bg-coconut-cream border border-coconut-sand/80">
+              <h4 class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac mb-2">Advanced AI &amp; Prompting</h4>
+              <p class="text-sm text-coconut-espresso leading-relaxed">Claude, Gemini, ChatGPT, Gamma, NotebookLM, WisprFlow, and Google AI Studio</p>
+            </div>
+
+            <div data-category="ai" class="stack-card p-5 rounded-2xl bg-coconut-cream border border-coconut-sand/80">
+              <h4 class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac mb-2">Automation &amp; AI Development</h4>
+              <p class="text-sm text-coconut-espresso leading-relaxed">Zapier, Make, Claude Code, VS Code, Firebase, and GitHub</p>
+            </div>
+
+            <div data-category="ops" class="stack-card p-5 rounded-2xl bg-coconut-cream border border-coconut-sand/80">
+              <h4 class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac mb-2">Google Workspace</h4>
+              <p class="text-sm text-coconut-espresso leading-relaxed">Admin Console, Business Profile, Gmail, Calendar, Drive, Docs, Sheets (advanced formulas), Slides, Meet, and Forms</p>
+            </div>
+
+            <div data-category="ops" class="stack-card p-5 rounded-2xl bg-coconut-cream border border-coconut-sand/80">
+              <h4 class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac mb-2">Microsoft 365 &amp; Business Ops</h4>
+              <p class="text-sm text-coconut-espresso leading-relaxed">Word, Excel (advanced formulas), PowerPoint, Teams, Outlook, Verizon One Talk, Notion, Skool, Calendly, Grammarly, and Slack</p>
+            </div>
+
+            <div data-category="crm" class="stack-card p-5 rounded-2xl bg-coconut-cream border border-coconut-sand/80">
+              <h4 class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac mb-2">CRM &amp; Transaction Systems</h4>
+              <p class="text-sm text-coconut-espresso leading-relaxed">KW Command, Brivity, Lofty, Follow Up Boss, FlexMLS, Aligned Showings, Monsoon Tax Records, Supra, DocuSign, Transaction Desk, SkySlope, Lone Wolf, RealTalk, and Nekst</p>
+            </div>
+
+            <div data-category="finance" class="stack-card p-5 rounded-2xl bg-coconut-cream border border-coconut-sand/80">
+              <h4 class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac mb-2">Accounting, Payroll &amp; Marketing</h4>
+              <p class="text-sm text-coconut-espresso leading-relaxed">QuickBooks (P&amp;L &amp; Payroll), Wise, Winmore, AccountEdge, Squarespace, Google Search Console, Cloudflare, USPS EDDM, Canva, Mailchimp, Beehiiv, Meta Business Suite, and ManyChat</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Toast Notification for Clipboard Feedback -->
-  <div
-    id="copy-toast"
-    role="status"
-    aria-live="polite"
-    class="fixed bottom-6 right-6 z-50 pointer-events-none opacity-0 translate-y-2 transition-all duration-300 bg-roastedCocoa text-coconutIvory border border-terracotta/50 px-4 py-3 rounded-lg shadow-xl flex items-center gap-2.5 text-xs font-medium tracking-wider uppercase"
-  >
-    <span class="w-2 h-2 rounded-full bg-terracotta"></span>
-    <span id="copy-toast-message">Copied to clipboard</span>
-  </div>
+    <!-- Annual Operations Retreats & Peer Network Section (Coconut Cream Surface) -->
+    <section id="retreats" class="bg-coconut-cream border-b border-coconut-sand py-20 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <div class="text-xs font-bold tracking-[0.18em] uppercase text-coconut-cognac mb-2">
+            Peer Benchmarking &amp; Community
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-coconut-espresso">
+            Annual Operations Retreats &amp; Peer Network
+          </h2>
+          <p class="text-base text-coconut-bark mt-3 leading-relaxed">
+            Each year, I gather with top operations leaders from across the country to exchange playbooks, stress-test workflow architecture, and bring proven systems back to my team.
+          </p>
+        </div>
 
-  <!-- =====================================================================
-       INTERACTIVE SCRIPTS (Image Fallbacks, Mobile Menu, ScrollSpy, Filters, Copy)
-       ===================================================================== -->
-  <script>
-    // Multi-tier fallback handler for Google Drive images
-    function handleDriveImageError(imgEl) {
-      if (!imgEl) return;
-      const step = Number(imgEl.getAttribute('data-fallback-step') || '0');
-      const lh3Url = imgEl.getAttribute('data-fallback-lh3');
-      const localUrl = imgEl.getAttribute('data-fallback-local');
-      const label = imgEl.getAttribute('data-fallback-label') || 'Dakota+Taylor';
-
-      if (step === 0 && lh3Url) {
-        imgEl.setAttribute('data-fallback-step', '1');
-        imgEl.src = lh3Url;
-        return;
-      }
-
-      if (step === 1 && localUrl) {
-        imgEl.setAttribute('data-fallback-step', '2');
-        imgEl.src = localUrl;
-        return;
-      }
-
-      imgEl.onerror = null;
-      imgEl.src = 'https://placehold.co/800x600/EFE4D5/241913?text=' + label;
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      // 1. Mobile Menu Toggle
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
-      const iconOpen = document.getElementById('icon-menu-open');
-      const iconClose = document.getElementById('icon-menu-close');
-      const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
-
-      function setMobileMenuState(isOpen) {
-        if (!mobileMenuDrawer || !mobileMenuBtn) return;
-        mobileMenuDrawer.classList.toggle('hidden', !isOpen);
-        iconOpen.classList.toggle('hidden', isOpen);
-        iconClose.classList.toggle('hidden', !isOpen);
-        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
-      }
-
-      if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', () => {
-          const isCurrentlyHidden = mobileMenuDrawer.classList.contains('hidden');
-          setMobileMenuState(isCurrentlyHidden);
-        });
-      }
-
-      mobileNavItems.forEach((item) => {
-        item.addEventListener('click', () => setMobileMenuState(false));
-      });
-
-      // 2. Active Section Highlighting on Scroll
-      const sections = ['impact', 'experience', 'strengths', 'retreats', 'about'];
-      const navLinks = document.querySelectorAll('.nav-link');
-
-      function updateActiveNav() {
-        const scrollPosition = window.scrollY + 140;
-        let currentSection = '';
-
-        sections.forEach((id) => {
-          const el = document.getElementById(id);
-          if (el) {
-            const top = el.offsetTop;
-            const height = el.offsetHeight;
-            if (scrollPosition >= top && scrollPosition < top + height) {
-              currentSection = id;
-            }
-          }
-        });
-
-        navLinks.forEach((link) => {
-          const target = link.getAttribute('data-nav-link');
-          if (target === currentSection) {
-            link.classList.add('text-espresso', 'border-cognac');
-            link.classList.remove('text-roastBrown', 'border-transparent');
-          } else {
-            link.classList.remove('text-espresso', 'border-cognac');
-            link.classList.add('text-roastBrown', 'border-transparent');
-          }
-        });
-      }
-
-      window.addEventListener('scroll', updateActiveNav, { passive: true });
-      updateActiveNav();
-
-      // 3. Tech Stack Category Filter
-      const filterBtns = document.querySelectorAll('.stack-filter-btn');
-      const stackCards = document.querySelectorAll('.stack-card');
-
-      filterBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const filter = btn.getAttribute('data-stack-filter');
-
-          filterBtns.forEach((b) => {
-            b.classList.remove('border-cognac', 'bg-cognac', 'text-coconutIvory');
-            b.classList.add('border-sandBorder', 'bg-coconutIvory', 'text-roastBrown');
-          });
-          btn.classList.add('border-cognac', 'bg-cognac', 'text-coconutIvory');
-          btn.classList.remove('border-sandBorder', 'bg-coconutIvory', 'text-roastBrown');
-
-          stackCards.forEach((card) => {
-            const group = card.getAttribute('data-stack-group');
-            if (filter === 'all' || group === filter) {
-              card.classList.remove('hidden');
-            } else {
-              card.classList.add('hidden');
-            }
-          });
-        });
-      });
-
-      // 4. Click-to-Copy Contact Info with Toast Feedback
-      const copyTriggers = document.querySelectorAll('.copy-trigger');
-      const copyToast = document.getElementById('copy-toast');
-      const copyToastMessage = document.getElementById('copy-toast-message');
-      let toastTimeout = null;
-
-      function showToast(label, value, btnEl) {
-        if (copyToast && copyToastMessage) {
-          copyToastMessage.textContent = label + ' copied: ' + value;
-          copyToast.classList.remove('opacity-0', 'translate-y-2');
-          copyToast.classList.add('opacity-100', 'translate-y-0');
-        }
-
-        const textSpan = btnEl ? btnEl.querySelector('.copy-btn-text') : null;
-        const originalText = textSpan ? textSpan.textContent : 'Copy';
-        if (textSpan) {
-          textSpan.textContent = 'Copied';
-        }
-
-        clearTimeout(toastTimeout);
-        toastTimeout = setTimeout(() => {
-          if (copyToast) {
-            copyToast.classList.add('opacity-0', 'translate-y-2');
-            copyToast.classList.remove('opacity-100', 'translate-y-0');
-          }
-          if (textSpan) {
-            textSpan.textContent = originalText;
-          }
-        }, 2200);
-      }
-
-      copyTriggers.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const textToCopy = btn.getAttribute('data-copy-text') || '';
-          const label = btn.getAttribute('data-copy-label') || 'Contact';
-
-          try {
-            const tempInput = document.createElement('textarea');
-            tempInput.value = textToCopy;
-            tempInput.setAttribute('readonly', '');
-            tempInput.style.position = 'fixed';
-            tempInput.style.opacity = '0';
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-            showToast(label, textToCopy, btn);
-          } catch (err) {
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(textToCopy)
-                .then(() => showToast(label, textToCopy, btn))
-                .catch(() => {});
-            }
-          }
-        });
-      });
-    });
-  </script>
-</body>
-</html>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Retreat Photo 1: Ops Boss 2024 -->
+          <figure class="bg-coconut-ivory rounded-2xl overflow-hidden border border-coconut-sand shadow-sm flex flex-col">
+            <div class="relative aspect-[4/3] bg-coconut-oat overflow-hidden">
+              <img
+                src="https://drive.google.com/thumbnail?id=1sfh0SW0Gumd4JmZ_y35QsAVlKXSY0g32&sz=w1000"
+                data-fallback-1="https://lh3.googleusercontent.com/d/1sfh0SW0Gumd4JmZ_y35QsAVlKXSY0g32=w1000"
+                alt="Ops Boss Retreat 2024 peer networking"
+                class="w-full h-full object-cover"
+                onerror="handleImageFallback(this)"
+              />
+              <div class="hidden w-full h-full flex items-center justify-center p-6 text-center text-xs text-coconut-bark">
+                Ops Boss 2024 Retreat Photo
+              </div>
+            </div>
+            <figcaption class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <span class="text-xs font-bold tracking-[0.14em] uppercase text-coconut-cognac">Ops Boss 2024</span>
+                  <a href="
