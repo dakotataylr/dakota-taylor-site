@@ -81,28 +81,28 @@
 <body class="bg-coconutCream text-espresso font-sans antialiased selection:bg-cognac/20 selection:text-espresso overflow-x-hidden">
 
   <!-- =====================================================================
-       1. STICKY THREE-ZONE EXECUTIVE HEADER
+       1. STICKY EXECUTIVE HEADER
        ===================================================================== -->
-  <header id="site-header" class="sticky top-0 inset-x-0 z-[1000] bg-coconutCream/95 backdrop-blur-md border-b border-sandBorder transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-3 sm:gap-6">
+  <header id="site-header" class="sticky top-0 inset-x-0 z-[1000] w-full max-w-full bg-coconutCream/95 backdrop-blur-md border-b border-sandBorder transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-4">
 
-      <!-- Left Zone: DT Monogram Box + Name & Tracked Subtitle -->
-      <a href="#top" class="flex items-center gap-3 sm:gap-3.5 group focus:outline-none min-w-0" aria-label="Dakota Taylor Home">
+      <!-- Left Zone: DT Monogram Box + Full Name & Subtitle -->
+      <a href="#top" class="flex items-center gap-3 sm:gap-3.5 group focus:outline-none shrink-0" aria-label="Dakota Taylor Home">
         <div class="w-10 h-10 border border-cognac bg-coconutIvory group-hover:bg-cognac transition-colors flex items-center justify-center rounded-sm shrink-0">
           <span class="text-sm font-medium tracking-widest text-espresso group-hover:text-coconutIvory transition-colors">DT</span>
         </div>
-        <div class="flex flex-col min-w-0">
-          <span class="text-base sm:text-lg font-medium tracking-tight text-espresso leading-tight truncate">
+        <div class="flex flex-col">
+          <span class="text-base sm:text-lg font-medium tracking-tight text-espresso leading-tight">
             Dakota Taylor
           </span>
-          <span class="text-[8.5px] sm:text-[10px] font-semibold tracking-[0.18em] sm:tracking-[0.2em] uppercase text-driftwood mt-0.5 leading-tight truncate">
+          <span class="text-[8.5px] sm:text-[10px] font-semibold tracking-[0.14em] sm:tracking-[0.2em] uppercase text-driftwood mt-0.5 leading-tight">
             Operations Leader &amp; Systems Engineer
           </span>
         </div>
       </a>
 
-      <!-- Center Zone (Desktop): Single-Word Anchor Links -->
-      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-7 lg:gap-10">
+      <!-- Center Zone (Wide Desktop Only): Single-Word Anchor Links -->
+      <nav aria-label="Primary Navigation" class="hidden lg:flex items-center gap-8 xl:gap-10">
         <a href="#impact" data-nav-link="impact" class="nav-link text-xs font-medium tracking-wider text-roastBrown hover:text-espresso transition-colors py-1 border-b-2 border-transparent">
           Impact
         </a>
@@ -120,51 +120,13 @@
         </a>
       </nav>
 
-      <!-- Right Zone: CONNECT Link + Mobile Menu Toggle -->
-      <div class="flex items-center gap-2.5 sm:gap-4 shrink-0">
+      <!-- Right Zone: CONNECT Link -->
+      <div class="flex items-center shrink-0">
         <a href="#connect" class="inline-flex items-center gap-1 text-[10px] sm:text-[11px] font-semibold tracking-[0.18em] sm:tracking-[0.2em] uppercase text-espresso hover:text-cognac transition-colors py-2 px-1">
           <span>Connect</span>
           <span aria-hidden="true" class="text-cognac text-xs leading-none">&#8599;</span>
         </a>
-
-        <!-- Mobile Hamburger Button -->
-        <button
-          id="mobile-menu-btn"
-          type="button"
-          class="md:hidden inline-flex items-center justify-center p-2.5 rounded border border-sandBorder bg-coconutIvory text-espresso hover:border-cognac transition-colors"
-          aria-controls="mobile-menu-drawer"
-          aria-expanded="false"
-          aria-label="Toggle navigation menu"
-        >
-          <svg id="icon-menu-open" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
-          </svg>
-          <svg id="icon-menu-close" class="w-4 h-4 hidden" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
       </div>
-    </div>
-
-    <!-- Mobile Collapsible Navigation Drawer -->
-    <div id="mobile-menu-drawer" class="hidden md:hidden bg-coconutIvory border-t border-sandBorder px-4 pt-2.5 pb-4 shadow-lg">
-      <nav aria-label="Mobile Navigation" class="flex flex-col space-y-1">
-        <a href="#impact" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Impact
-        </a>
-        <a href="#experience" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Experience
-        </a>
-        <a href="#strengths" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Strengths
-        </a>
-        <a href="#retreats" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          Retreats
-        </a>
-        <a href="#about" class="mobile-nav-item py-2.5 px-3 rounded text-xs font-medium tracking-[0.16em] uppercase text-roastBrown hover:text-espresso hover:bg-toastedOat/70 transition-colors">
-          About
-        </a>
-      </nav>
     </div>
   </header>
 
@@ -1108,33 +1070,7 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. Mobile Menu Toggle
-      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-      const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
-      const iconOpen = document.getElementById('icon-menu-open');
-      const iconClose = document.getElementById('icon-menu-close');
-      const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
-
-      function setMobileMenuState(isOpen) {
-        if (!mobileMenuDrawer || !mobileMenuBtn) return;
-        mobileMenuDrawer.classList.toggle('hidden', !isOpen);
-        iconOpen.classList.toggle('hidden', isOpen);
-        iconClose.classList.toggle('hidden', !isOpen);
-        mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
-      }
-
-      if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', () => {
-          const isCurrentlyHidden = mobileMenuDrawer.classList.contains('hidden');
-          setMobileMenuState(isCurrentlyHidden);
-        });
-      }
-
-      mobileNavItems.forEach((item) => {
-        item.addEventListener('click', () => setMobileMenuState(false));
-      });
-
-      // 2. Active Section Highlighting on Scroll
+      // 1. Active Section Highlighting on Scroll
       const sections = ['impact', 'experience', 'strengths', 'retreats', 'about'];
       const navLinks = document.querySelectorAll('.nav-link');
 
