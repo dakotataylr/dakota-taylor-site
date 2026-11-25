@@ -946,7 +946,7 @@
     <!-- ===================================================================
          9. LET'S CONNECT (#connect) (Coconut Cream #FAF6F0)
          =================================================================== -->
-    <section id="connect" class="py-20 sm:py-24 bg-coconutCream">
+    <section id="connect" class="connect-section py-20 sm:py-24 bg-coconutCream">
       <div class="max-w-7xl mx-auto px-4 sm:px-8">
 
         <div class="mb-12">
@@ -1029,6 +1029,75 @@
           </div>
 
         </div>
+
+        <!-- Contact Form Below Contact Row -->
+        <div class="mt-10 max-w-2xl bg-coconutIvory border border-sandBorder rounded-xl p-6 sm:p-8 shadow-sm">
+          <p class="text-sm sm:text-base font-normal text-roastBrown">
+            Have an opportunity or project in mind? Send a message below.
+          </p>
+
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form flex flex-col gap-4 mt-5">
+            <input type="hidden" name="access_key" value="28f6c313-eaf5-41fe-9909-dd15c4777caf" />
+
+            <!-- Customizes the email subject line you receive -->
+            <input type="hidden" name="subject" value="Portfolio Conversation" />
+
+            <!-- Optional: Honeypot spam protection (stays hidden from real humans) -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+            <div class="form-group flex flex-col gap-1.5">
+              <label for="name" class="text-xs font-semibold tracking-wider uppercase text-espresso">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Doe"
+                required
+                class="w-full px-3.5 py-2.5 rounded-md border border-sandBorder bg-coconutCream text-sm sm:text-base text-espresso placeholder:text-driftwood/70 focus:outline-none focus:border-cognac focus:ring-2 focus:ring-cognac/20 transition-all"
+              />
+            </div>
+
+            <div class="form-group flex flex-col gap-1.5">
+              <label for="email" class="text-xs font-semibold tracking-wider uppercase text-espresso">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                class="w-full px-3.5 py-2.5 rounded-md border border-sandBorder bg-coconutCream text-sm sm:text-base text-espresso placeholder:text-driftwood/70 focus:outline-none focus:border-cognac focus:ring-2 focus:ring-cognac/20 transition-all"
+              />
+            </div>
+
+            <div class="form-group flex flex-col gap-1.5">
+              <label for="message" class="text-xs font-semibold tracking-wider uppercase text-espresso">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full px-3.5 py-2.5 rounded-md border border-sandBorder bg-coconutCream text-sm sm:text-base text-espresso focus:outline-none focus:border-cognac focus:ring-2 focus:ring-cognac/20 transition-all"
+              >Hello Dakota,
+
+I visited your website and would like to connect regarding:
+
+
+Best,</textarea>
+            </div>
+
+            <div class="pt-1 flex flex-col sm:flex-row sm:items-center gap-4">
+              <button
+                type="submit"
+                id="submit-btn"
+                class="btn-primary self-start inline-flex items-center justify-center bg-cognac hover:bg-espresso disabled:bg-driftwood/60 text-coconutIvory font-semibold text-[11px] tracking-[0.18em] uppercase px-7 py-4 rounded-sm transition-all shadow-sm cursor-pointer disabled:cursor-not-allowed"
+              >
+                Send Message
+              </button>
+              <p id="form-status" class="form-status text-sm font-medium" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+
       </div>
     </section>
 
@@ -1056,51 +1125,8 @@
           </div>
         </div>
 
-        <!-- Center Zone: Start a Conversation CTA + Fallback Panel -->
-        <div class="flex flex-col items-center justify-center">
-          <a
-            id="start-conversation-btn"
-            href="mailto:dtaylor2you@gmail.com?subject=Portfolio%20Conversation&body=Hello%20Dakota%2C%0D%0A%0D%0AI%20visited%20your%20website%20and%20would%20like%20to%20connect%20regarding%3A%0D%0A%0D%0A%0D%0ABest%2C"
-            class="inline-flex items-center justify-center gap-2 bg-cognac hover:bg-espresso text-coconutIvory font-semibold text-[11px] tracking-[0.18em] uppercase px-6 py-3.5 rounded-sm transition-all shadow-sm"
-          >
-            <span>Start a Conversation</span>
-            <span aria-hidden="true" class="text-xs">&#8599;</span>
-          </a>
-
-          <!-- Hidden fallback panel revealed on click -->
-          <div id="email-fallback-panel" class="mt-3 max-w-md bg-coconutCream border border-sandBorder rounded-xl p-4 text-left shadow-sm" hidden>
-            <p class="text-[11px] font-medium text-roastBrown mb-2.5">
-              Email app didn't open? Choose an option below:
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <a
-                id="gmail-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center px-3 py-1.5 rounded-md border border-sandBorder bg-coconutIvory hover:bg-cognac hover:border-cognac text-espresso hover:text-coconutIvory text-[10px] font-semibold tracking-[0.14em] uppercase transition-colors"
-              >
-                Open in Gmail
-              </a>
-              <a
-                id="outlook-link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center px-3 py-1.5 rounded-md border border-sandBorder bg-coconutIvory hover:bg-cognac hover:border-cognac text-espresso hover:text-coconutIvory text-[10px] font-semibold tracking-[0.14em] uppercase transition-colors"
-              >
-                Open in Outlook
-              </a>
-              <button
-                id="copy-email-btn"
-                type="button"
-                class="inline-flex items-center px-3 py-1.5 rounded-md border border-sandBorder bg-coconutIvory hover:bg-cognac hover:border-cognac text-espresso hover:text-coconutIvory text-[10px] font-semibold tracking-[0.14em] uppercase transition-colors cursor-pointer"
-              >
-                Copy email address
-              </button>
-            </div>
-          </div>
-        </div>
+        <!-- Center Zone: Intentionally Blank -->
+        <div class="hidden lg:block flex-1" aria-hidden="true"></div>
 
         <!-- Right Zone: Copyright -->
         <div class="text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase text-driftwood shrink-0">
@@ -1123,7 +1149,7 @@
   </div>
 
   <!-- =====================================================================
-       INTERACTIVE SCRIPTS (Image Fallbacks, Mobile Menu, ScrollSpy, Filters, Copy)
+       INTERACTIVE SCRIPTS (Image Fallbacks, Mobile Menu, ScrollSpy, Filters, Copy, Form)
        ===================================================================== -->
   <script>
     // Multi-tier fallback handler for Google Drive images
@@ -1294,70 +1320,46 @@
         });
       });
 
-      // 5. Start a Conversation Mailto + Webmail Fallback Panel
-      const email = 'dtaylor2you@gmail.com';
-      const subject = 'Portfolio Conversation';
-      const rawBody = 'Hello Dakota,\n\nI visited your website and would like to connect regarding:\n\n\nBest,';
-      const mailtoBody = rawBody.replace(/\n/g, '\r\n');
+      // 5. Web3Forms Contact Form Submission
+      const form = document.getElementById('contact-form');
+      const statusText = document.getElementById('form-status');
+      const submitBtn = document.getElementById('submit-btn');
 
-      const encodedTo = encodeURIComponent(email);
-      const encodedSubject = encodeURIComponent(subject);
-      const encodedMailtoBody = encodeURIComponent(mailtoBody);
-      const encodedWebBody = encodeURIComponent(rawBody);
+      if (form && statusText && submitBtn) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+          statusText.textContent = '';
 
-      const primaryBtn = document.getElementById('start-conversation-btn');
-      const fallbackPanel = document.getElementById('email-fallback-panel');
-      const gmailLink = document.getElementById('gmail-link');
-      const outlookLink = document.getElementById('outlook-link');
-      const copyEmailBtn = document.getElementById('copy-email-btn');
+          const formData = new FormData(form);
 
-      if (primaryBtn) {
-        primaryBtn.href = `mailto:${email}?subject=${encodedSubject}&body=${encodedMailtoBody}`;
-        primaryBtn.addEventListener('click', () => {
-          if (fallbackPanel) {
-            fallbackPanel.hidden = false;
-          }
-        });
-      }
-
-      if (gmailLink) {
-        gmailLink.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodedTo}&su=${encodedSubject}&body=${encodedWebBody}`;
-      }
-
-      if (outlookLink) {
-        outlookLink.href = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodedTo}&subject=${encodedSubject}&body=${encodedWebBody}`;
-      }
-
-      if (copyEmailBtn) {
-        copyEmailBtn.addEventListener('click', async () => {
           try {
-            await navigator.clipboard.writeText(email);
-          } catch (err) {
-            const textArea = document.createElement('textarea');
-            textArea.value = email;
-            textArea.style.position = 'fixed';
-            textArea.style.opacity = '0';
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-          }
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                Accept: 'application/json'
+              }
+            });
 
-          const originalText = copyEmailBtn.textContent;
-          copyEmailBtn.textContent = 'Copied!';
-          if (copyToast && copyToastMessage) {
-            copyToastMessage.textContent = 'Email address copied: ' + email;
-            copyToast.classList.remove('opacity-0', 'translate-y-2');
-            copyToast.classList.add('opacity-100', 'translate-y-0');
-            clearTimeout(toastTimeout);
-            toastTimeout = setTimeout(() => {
-              copyToast.classList.add('opacity-0', 'translate-y-2');
-              copyToast.classList.remove('opacity-100', 'translate-y-0');
-            }, 2200);
+            const result = await response.json();
+
+            if (result.success) {
+              statusText.style.color = '#596147';
+              statusText.textContent = 'Thanks for reaching out! Your message has been sent.';
+              form.reset();
+            } else {
+              statusText.style.color = '#8A5836';
+              statusText.textContent = 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            statusText.style.color = '#8A5836';
+            statusText.textContent = 'Network error. Please check your connection and try again.';
+          } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
           }
-          setTimeout(() => {
-            copyEmailBtn.textContent = originalText;
-          }, 2500);
         });
       }
     });
